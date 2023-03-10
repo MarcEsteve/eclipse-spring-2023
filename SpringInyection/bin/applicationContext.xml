@@ -15,7 +15,13 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 <bean id="mientrenador" class="com.spring.EntrenadorFutbol">
 <!-- se establece qué bean se inyecta (miExperienciaServicio) y dónde (en el 
 constructor) -->
-<constructor-arg ref="miExperienciaServicio"></constructor-arg>
+	<constructor-arg ref="miExperienciaServicio"></constructor-arg>
+</bean>
+
+<bean id="mientrenadorBaloncesto" class="com.spring.EntrenadorBaloncesto">
+<!-- se establece qué bean se inyecta (miExperienciaServicio) y sobre qué método 
+setter (setExperienciaServicio) -->
+	<property name="experienciaServicio" ref="miExperienciaServicio" />
 </bean>
 
 
