@@ -2,7 +2,7 @@ package com.spring;
 
 import org.springframework.stereotype.Component;
 
-//mientrenador es el id del bean 
+//Anotation @Component genera un bean llamado "entrenadorFutbol"
 @Component
 public class EntrenadorFutbol implements Entrenador {
 	public String getEntrenamiento() {

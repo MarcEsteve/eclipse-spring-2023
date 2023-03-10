@@ -22,11 +22,15 @@ public class MainSpring {
 //				Entrenador.class); 
 //		System.out.println(entrenaBal.getEntrenamiento());
 		
-		Entrenador entrenador = context.getBean("entrenadorFutbol", 
+		Entrenador entrenadorFut = context.getBean("entrenadorFutbol", 
 				Entrenador.class);
-		System.out.println(entrenador.getEntrenamiento());
+		System.out.println(entrenadorFut.getEntrenamiento());
 		
-		// cierra el contexto 
+		Entrenador entrenadorBal = context.getBean("entrenadorBaloncesto", 
+				Entrenador.class);
+		System.out.println(entrenadorBal.getEntrenamiento());
+		
+		// cierra el context
 		context.close();
 	}
 
