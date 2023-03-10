@@ -24,5 +24,9 @@ setter (setExperienciaServicio) -->
 	<property name="experienciaServicio" ref="miExperienciaServicio" />
 </bean>
 
+<bean id="mientrenador3" class="com.spring.EntrenadorJockey">
+	<property name="email" value="correodeprueba@mail.com" />
+	<property name="equipo" value="New Team" />
+</bean>
 
 </beans>

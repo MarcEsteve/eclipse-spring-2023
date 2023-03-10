@@ -18,6 +18,11 @@ public class MainSpring {
 				, Entrenador.class); 
 		System.out.println(entrenador2.getExperiencia());
 		
+		// obtener el bean
+		Entrenador entrenador3 = context.getBean("mientrenador3", Entrenador.class); 
+		System.out.println(entrenador3.getEmail());
+		System.out.println(entrenador3.getEquipo()); 
+		
 		// cierra el context
 		context.close();
 	}
