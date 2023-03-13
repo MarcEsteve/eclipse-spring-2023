@@ -8,5 +8,7 @@ public interface Entrenador {
 	public String getEmail();
 	public void setEmail(String email); 
 	public String getEquipo();
-	public void setEquipo(String equipo);
+	public void setEquipo(String equipo); 
+	public int getJugadores();
+	public void setJugadores(int jugadores);
 }

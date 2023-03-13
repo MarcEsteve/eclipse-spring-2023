@@ -28,7 +28,8 @@ public class MainSpring {
 				Entrenador entrenador4 = context.getBean("mientrenador4", 
 						Entrenador.class); 
 				System.out.println(entrenador4.getEmail());
-				System.out.println(entrenador4.getEquipo()); 
+				System.out.println(entrenador4.getEquipo());
+				System.out.println(entrenador4.getJugadores());  
 		
 		// cierra el context
 		context.close();

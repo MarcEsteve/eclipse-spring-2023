@@ -2,7 +2,7 @@ package com.spring;
 
 public class EntrenadorJockey implements Entrenador {
 
-	protected String email, equipo;
+	protected String email, equipo, jugadores;
 	
 	private ExperienciaServicio experienciaServicio;
 	 
@@ -31,6 +31,16 @@ public class EntrenadorJockey implements Entrenador {
 	public int getExperiencia() {
 		// TODO Auto-generated method stub
 		return experienciaServicio.getExperiencia();
+	}
+	@Override
+	public int getJugadores() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	@Override
+	public void setJugadores(int jugadores) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

@@ -3,6 +3,7 @@ package com.spring;
 public class EntrenadorRugby implements Entrenador {
 
 	protected String email, equipo;
+	protected int jugadores;
 	
 	private ExperienciaServicio experienciaServicio;
 	 
@@ -23,6 +24,19 @@ public class EntrenadorRugby implements Entrenador {
 		this.equipo = equipo;
 	}
 	@Override
+	public int getJugadores() {
+		// TODO Auto-generated method stub
+		return jugadores;
+	}
+	@Override
+	public void setJugadores(int jugadores) {
+		System.out.println("Inyección por properties jugadores: " 
+				+ jugadores); 
+		this.jugadores = jugadores;
+		
+	}
+
+	@Override
 	public String getEntrenamiento() {
 		// TODO Auto-generated method stub
 		return "Realizar 30 pases de balón";
@@ -32,5 +46,6 @@ public class EntrenadorRugby implements Entrenador {
 		// TODO Auto-generated method stub
 		return experienciaServicio.getExperiencia();
 	}
+	
 
 }

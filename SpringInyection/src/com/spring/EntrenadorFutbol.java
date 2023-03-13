@@ -41,4 +41,14 @@ public class EntrenadorFutbol implements Entrenador {
 		this.equipo = equipo;
 
 	}
+	@Override
+	public int getJugadores() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	@Override
+	public void setJugadores(int jugadores) {
+		// TODO Auto-generated method stub
+		
+	}
 }

@@ -33,10 +33,11 @@ setter (setExperienciaServicio) -->
 <context:property-placeholder location="classpath:datos.properties"/>
 
 <bean id="mientrenador4" class="com.spring.EntrenadorRugby">
-<!-- asigna el valor de la clave email del archivo properties -->
-<property name="email" value="${email}" />
-<!-- asigna el valor de la clave equipo del archivo properties -->
-<property name="equipo" value="${equipo}" />
+	<!-- asigna el valor de la clave email del archivo properties -->
+	<property name="email" value="${email}" />
+	<!-- asigna el valor de la clave equipo del archivo properties -->
+	<property name="equipo" value="${equipo}" />
+	<property name="jugadores" value="${jugadores}" />
 </bean>
 
 </beans>
