@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Primera prueba MVC</title>
-</head>
+<head> </head>
 <body>
-Hello world!
+	Hello world!
 </body>
 </html>
