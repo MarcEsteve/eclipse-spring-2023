@@ -5,7 +5,7 @@
 <html>
 
 <head>
-	<title>List Customers</title>
+	<title>Lista de Clientes</title>
 	
 	<!-- reference our style sheet -->
 
@@ -19,7 +19,7 @@
 
 	<div id="wrapper">
 		<div id="header">
-			<h2>CRM - Customer Relationship Manager</h2>
+			<h2>CRM - Gestión de Clientes</h2>
 		</div>
 	</div>
 	
@@ -27,24 +27,49 @@
 	
 		<div id="content">
 		
+			<!-- put new button: Add Customer -->
+		
+			<input type="button" value="Add Customer"
+				   onclick="window.location.href='showFormForAdd'; return false;"
+				   class="add-button"
+			/>
+		
 			<!--  add our html table here -->
 		
 			<table>
 				<tr>
-					<th>ID Cliente</th>
 					<th>Nombre</th>
 					<th>Apellidos</th>
-					<th>Email</th>
+					<th>Correo</th>
+					<th>Acciones</th>
 				</tr>
 				
 				<!-- loop over and print our customers -->
 				<c:forEach var="tempCustomer" items="${customers}">
 				
+					<!-- construct an "update" link with customer id -->
+					<c:url var="updateLink" value="/customer/showFormForUpdate">
+						<c:param name="customerId" value="${tempCustomer.id}" />
+					</c:url>					
+
+					<!-- construct an "delete" link with customer id -->
+					<c:url var="deleteLink" value="/customer/delete">
+						<c:param name="customerId" value="${tempCustomer.id}" />
+					</c:url>					
+					
 					<tr>
-						<td> ${tempCustomer.id} </td>
 						<td> ${tempCustomer.firstName} </td>
 						<td> ${tempCustomer.lastName} </td>
 						<td> ${tempCustomer.email} </td>
+						
+						<td>
+							<!-- display the update link -->
+							<a href="${updateLink}">Actualizar</a>
+							|
+							<a href="${deleteLink}"
+							   onclick="if (!(confirm('Are you sure you want to delete this customer?'))) return false">Eliminar</a>
+						</td>
+						
 					</tr>
 				
 				</c:forEach>
