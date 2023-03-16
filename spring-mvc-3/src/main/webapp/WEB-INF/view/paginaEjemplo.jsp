@@ -7,15 +7,17 @@
 	<title>Primer ejemplo de MVC con Spring desde Eclipse</title>
 	<script src="${pageContext.request.contextPath}/resources/js/main.js"></script>
 	<style>
-	   body{background:rgb(25, 255, 17) ;}
+	   body{
+	   		background:white ;
+	   }
 	</style>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/titular.css">
 </head>
 <body>
 		
 <h1>Pagina principal del proyecto de MVC con Spring</h1>
-<a href="mostrarFormulario">formulario</a>
 <img src="${pageContext.request.contextPath}/resources/img/mar.jpg" />
+<a href="mostrarFormulario">formulario</a>
 <p style="color:#ff11c7;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
 when an unknown printer took a galley of type and scrambled it to make a type 

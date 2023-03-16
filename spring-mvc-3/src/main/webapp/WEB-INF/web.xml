@@ -6,7 +6,7 @@
 
 	<display-name>mvc ejemplo</display-name>
 
-	<absolute-ordering />
+	<absolute-ordering/>
 
 	<!-- Configuracion del dispatcher servlet -->
 	<servlet>
